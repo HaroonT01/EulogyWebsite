@@ -88,7 +88,8 @@ const Popup = ({ onClose, onSubmit }) => {
         </div>
       </div>
       <button id="Cancel-button" onClick={onClose}>Cancel</button>
-      <button id="write-obiturary" onClick={() => onSubmit({ id: Date.now(), title: noteTitle, born: birthDate, died: deathDate, image: image })}>Write Obiturary</button>
+      <button id="write-obiturary" onClick={handleSubmit}>Write Obiturary</button>
+      <button id="write-obiturary" onClick={handleSubmit}>Write Obiturary</button>
     </div>
   );
 };
